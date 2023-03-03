@@ -6,3 +6,6 @@ Fridas’ Eats is an independently established restaurant that is family owned a
 
 <!--link to live site-->
 You can view the live site here.- *link*
+
+<!--images of responsivity of quiz-->
+![Fridas Eats Responsiveness](link)
