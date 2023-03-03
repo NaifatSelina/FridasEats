@@ -66,3 +66,29 @@ To design the Fridas’ Eats webpage I decided to use Balsamiq to create the des
 ![Colours](link)
 
 [Back to Contents](<#contents>)
+
+<!--features-->
+## Features
+
+[Back to Contents](<#contents>)
+
+<!--future features-->
+## Future Features 
+
+[Back to Contents](<#contents>)
+
+<!--technologies used-->
+## Technologies Used
+
+[HTML5](https://en.wikipedia.org/wiki/HTML5)- used to provide structure and content of webpages.
+
+[CSS3](https://en.wikipedia.org/wiki/CSS)- used to style webpages.
+
+[JavaScript](https://en.wikipedia.org/wiki/JavaScript)-used to provide interactivity.
+
+[GitPod](https://www.gitpod.io/)-used to create, maintain and update the webpages.
+
+[GitHub](https://github.com/)-used to stored and deployed the webpages.
+
+[Compressor](https://compressor.io/)-compressed the background and read.me images.
+
