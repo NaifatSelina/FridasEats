@@ -9,3 +9,26 @@ You can view the live site here.- *link*
 
 <!--images of responsivity of quiz-->
 ![Fridas Eats Responsiveness](link)
+
+<!--contents section-->
+# Contents
+
+* [**Project Aim**](<#project-aim>)
+* [**User Experience**](<#user-experience>)
+* [Design Wireframes](<#design-wireframes>)
+* [Webpage Structure](<#webpage-structure>)
+* [Reasons for Design](<#reasons-for-design>)
+* [Fonts](<#fonts>)
+* [Colour Scheme](<#colour-scheme>)
+* [**Features**](<#features>)
+* [Home Page](<#home-page>)
+* [**Future Features**](<#future-features>)
+* [Newsletter Sign Up](<#newsletter-sign-up>)
+* [**Technologies Used**](<#technologies-used>)
+* [**Testing**](<#testing>)
+* [**Bugs and Fixes**](<#bugs-and-fixes>)
+* [**Deployment**](<#deployment>)
+* [**Credits**](<#credits>)
+* [Media](<#media>)
+* [Content](<#content>)
+* [**Acknowledgements**](<#acknowledgements>)
