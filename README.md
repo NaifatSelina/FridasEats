@@ -42,5 +42,8 @@ For my fourth project I decided to create a webpage for a potential business ide
 <!--user experience-->
 ## User Experience
 
+### Design Wireframes
+To design the Fridas’ Eats webpage I decided to use Balsamiq to create the design wireframes. I decided when creating these design wireframes that I would focus more on the actual structure of the different webpages, navigating the proportions of the pages and where I want each element positions as opposed to the aesthetics such as font and colour. The reason for this was because having the structure aids significantly in the development process and adds ease. This is the reason the wireframe colours and fonts may not completely identify with those presented in the final product. However, the wireframes are definitely a very important and vital initial step in the development of all my projects- this one included.
 
+![Design Wireframes](link)
 
