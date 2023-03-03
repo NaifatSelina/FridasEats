@@ -92,3 +92,35 @@ To design the Fridas’ Eats webpage I decided to use Balsamiq to create the des
 
 [Compressor](https://compressor.io/)-compressed the background and read.me images.
 
+[Back to Contents](<#contents>)
+
+<!--testing-->
+## Testing
+The code used to create the Spider-Man Super Quiz has under-gone testing and validation through [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input), [A11y](https://www.a11yproject.com/checklist/), [Jshint](https://jshint.com/), Manual Testing, [Responsive Design Checker](https://responsivedesignchecker.com/) and [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/). 
+
+### W3C HTML Validator. 
+![W3C HTML Validator](assets/images/html%20valid.png)
+- I tested all html files to ensure no bugs were ultimately found.
+
+### W3C CSS Validator. 
+![W3C CSS Validator](assets/images/css%20valid.png)
+
+### A11y. 
+![A11Y](assets/images/A11Y..png)
+- I decided to ensure the colours contrasted enough throughout the webpage for accessibility.
+
+### Lighthouse Testing. 
+![Lighthouse](assets/images/LightHouse%20Testing.png)
+![Lighthouse](assets/images/better%20lighthouse%20mobile.png)
+- In future webpages for mobile screens I would vastly simplify the layout of the quiz so the performance can be faster on mobile devices.
+
+### Responsive Design Checker. 
+![Responsive Design Checker](assets/images/Responsive%20Design%20Checker.png)
+- Although I checked responsiveness of the webpage with Am I Responsive? and Lighthouse Testing, I also decided to ensure the webpage was responsive by further checking with Responsive Design Checker.
+
+### JsHint.
+![JsHint](assets/images/jshint.png)
+
+### Manual Testing. 
+#### home page.
+- Ensure entire page is responsive by adding media query styling.
