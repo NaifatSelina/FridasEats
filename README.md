@@ -3,3 +3,6 @@
 
 <!--summary paragraph-->
 Fridas’ Eats is an independently established restaurant that is family owned and ran. The restaurant was founded by Aisha Said and it located in the heart of London. When customers want to visit the cozy and chic restaurant that focuses on serving authentic Zanzibari foods, they can go to the webpage and book themselves in for a reservation. Customers who are accessing the webpage will see a visually appealing front-end website which shows users information about Fridas’ Eats, allows customers to create an account, make a booking, write a review and contact the restaurant, amongst other exciting things. The other half of the website acts as a management system for staff members. If an account has the correct permissions, the staff member will be able to manage everything related to Fridas’ Eats such as bookings, reviews and payments.
+
+<!--link to live site-->
+You can view the live site here.- *link*
