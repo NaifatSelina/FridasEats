@@ -124,3 +124,32 @@ The code used to create the Spider-Man Super Quiz has under-gone testing and val
 ### Manual Testing. 
 #### home page.
 - Ensure entire page is responsive by adding media query styling.
+
+[Back to Contents](<#contents>)
+
+<!--bugs and fixes-->
+## Bugs and Fixes
+
+### Bugs Fixed
+
+### Bugs Unfixed
+
+[Back to Contents](<#contents>)
+
+<!--deployment-->
+## Deployment
+- Your site has now been deployed.
+![Deployed](assets/images/published.png)
+
+The live link to the GitHub Repository can be found [here](https://github.com/NaifatSelina/FridasEats).
+
+[Back to Contents](<#contents>)
+<!--credits-->
+## Credits 
+## Media
+
+## Content
+
+[Back to Contents](<#contents>)
+<!--Acknowledgements-->
+## Acknowledgements
