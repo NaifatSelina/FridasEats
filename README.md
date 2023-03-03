@@ -47,3 +47,22 @@ To design the Fridas’ Eats webpage I decided to use Balsamiq to create the des
 
 ![Design Wireframes](link)
 
+<!--webpage structure-->
+### Webpage Structure
+
+<!--reasons for design-->
+## Reasons for Design
+
+### Fonts
+- 
+- 
+- 
+
+### Colour Scheme
+- 
+- 
+- 
+
+![Colours](link)
+
+[Back to Contents](<#contents>)
