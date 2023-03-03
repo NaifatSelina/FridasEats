@@ -32,3 +32,10 @@ You can view the live site here.- *link*
 * [Media](<#media>)
 * [Content](<#content>)
 * [**Acknowledgements**](<#acknowledgements>)
+
+<!--project aim-->
+## Project Aim
+For my fourth project I decided to create a webpage for a potential business idea that my relative has, therefore, I had to ensure the webpage was professional, practical for actual use, authentic to the goals and aesthetics of the business and made with a high attention to detail. To reach this objective I will be using HTML, CSS, Bootstrap, Javascript, Python, and the Django Framework, ensuring to test throughout to monitor bugs and inefficiencies in my code.
+
+[Back to Contents](<#contents>)
+
