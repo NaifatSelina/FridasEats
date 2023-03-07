@@ -33,6 +33,32 @@ header {
     border-bottom: 1px solid #fafafa;
 }
 
+/* main image */
+img {
+    position: relative;
+    height: auto;
+}
+
+/* booking button*/
+#booking-btn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #484848cf;
+    color: white;
+    font-size: 22px;
+    padding: 12px 24px;
+    border: #fafafa 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#booking-btn:hover {
+    background-color: black;
+  }
+
 /* footer */
 
 footer {
