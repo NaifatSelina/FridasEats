@@ -3,3 +3,39 @@
 body {
     font-family: Libre Caslon Display, sans-serif;
 }
+
+/* footer */
+
+footer {
+    background-color: #191f19;
+    color: #fafafa;
+    min-height: 100px;
+    margin: 0;
+    padding-top: 70px;
+}
+
+p.inline-block {
+    padding-bottom: 25px;
+}
+
+.form-control {
+    background-color: #191f19;
+    border-top: #191f19;
+    border-left: #191f19;
+    border-right: #191f19;
+    border-radius: 0%;
+}
+
+#disclaimer {
+    font-size: small;
+}
+
+#submit-btn {
+    border: #fafafa solid 0.5px;
+    border-radius: 2px;
+    color: #fafafa;
+    background-color: #191f19;
+    font-family: Libre Caslon Display, sans-serif;
+    letter-spacing: 1px;
+    width: 80px;
+}
