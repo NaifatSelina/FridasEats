@@ -4,6 +4,35 @@ body {
     font-family: Libre Caslon Display, sans-serif;
 }
 
+/* header */
+header {
+    background-color: #191f19;
+    color: #fafafa;
+    padding-top: 30px;
+}
+
+.text-muted:hover {
+    font-size: medium;
+}
+
+/* nav links*/
+
+#menu li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 120%;
+
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #fafafa;
+}
+
 /* footer */
 
 footer {
