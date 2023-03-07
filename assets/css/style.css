@@ -68,11 +68,13 @@ img {
     width: 100%;
 }
 h2 {
-    color: #fafafa;
-    padding-top: 30px;
-    text-align: center;
+    color: #a17f61;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    float: inline-start;
     font-size: 40px;
     font-family: Satisfy, sans-serif;
+    border-bottom: #fafafa3b 1px solid;
 }
 
 #food-image-one, #food-image-two {
@@ -80,6 +82,10 @@ h2 {
     width: 37rem;
     margin-top: 30px;
     padding-bottom: 15%;
+}
+
+.our-text {
+    color: #f5d5bd;
 }
 /* footer */
 
