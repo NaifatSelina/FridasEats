@@ -24,7 +24,7 @@ h1, .text-muted {
 
 #menu li {
     list-style-type: none;
-    margin-right: 30px; 
+    margin-right: 20px; 
     margin-top: 55px;
 }
 
@@ -36,6 +36,10 @@ h1, .text-muted {
 
 #menu a:hover {
     border-bottom: 1px solid #fafafa;
+}
+
+.fixed-top {
+    position: absolute;
 }
 
 /* main image */
