@@ -134,7 +134,12 @@ div.col-sm {
     color: antiquewhite;
     vertical-align:middle;
     font-size: large;
-    text-align: center;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20%;
+    border-right: #282828 1px solid;;
 }
 
 
