@@ -43,7 +43,7 @@ h1, .text-muted {
 }
 
 /* main image */
-img {
+#main-image {
     position: relative;
     height: auto;
 }
@@ -95,6 +95,35 @@ h2 {
 .our-text {
     color: #f5d5bd;
 }
+
+/* interval */
+
+section#interval {
+    height: 200px;
+    width: 100%;
+    overflow: scroll;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.777);
+    position: relative;
+}
+
+
+p.int-text {
+   font-size: 30px;
+   font-style: oblique;
+   color: rgb(114, 42, 0);
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 1;
+   font-weight: bold;
+}
+
+img#int-img.container {
+    height: 200px;
+}
+
 /* footer */
 
 footer {
