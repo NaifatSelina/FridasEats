@@ -10,6 +10,7 @@ header {
     background-color: #191f19;
     color: #fafafa;
     padding-top: 30px;
+    height: 120px;
 }
 
 h1, .text-muted {
@@ -51,13 +52,13 @@ h1, .text-muted {
 /* booking button*/
 #booking-btn {
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #484848da;
     color: white;
-    font-size: 22px;
+    font-size: 30px;
     padding: 12px 24px;
     
     cursor: pointer;
@@ -72,7 +73,7 @@ h1, .text-muted {
 /* our passion section */
 
 #our-passion {
-    background-color: #1d0c00fd;
+    background-color: #100700fd;
     width: 100%;
 }
 h2 {
@@ -94,12 +95,13 @@ h2 {
 
 .our-text {
     color: #f5d5bd;
+    font-size: large;
 }
 
 /* interval */
 
 section#interval {
-    height: 200px;
+    height: 500px;
     width: 100%;
     overflow: scroll;
     color: white;
@@ -120,8 +122,18 @@ p.int-text {
    font-weight: bold;
 }
 
-img#int-img.container {
-    height: 200px;
+/* reviews */
+
+section#reviews {
+    height: 600px;
+    background-color: #100700fd;
+}
+
+div.col-sm {
+    color: antiquewhite;
+    vertical-align:middle;
+    font-size: large;
+    text-align: center;    
 }
 
 /* footer */
