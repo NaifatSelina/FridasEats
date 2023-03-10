@@ -196,10 +196,20 @@ ul#times{
     color: white;
     padding-bottom: 20px;
     font-style: italic;
+    float: left;
 }
 
 ul#times > li {
     padding-bottom: 20px;
+}
+
+ul#address{
+    font-size: 150%;
+    list-style-type: none;
+    color: white;
+    padding-bottom: 20px;
+    
+    float: right;
 }
 
 /* footer */
