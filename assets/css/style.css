@@ -14,7 +14,7 @@ header {
     height: 120px;
 }
 
-h1, .text-muted {
+h1, .text-muted, h3 {
     padding-left: 15px;
 }
 
@@ -144,22 +144,48 @@ div.col-sm {
     transition: font-size 0.5s ease;
 }
 
+div#lastdiv.col-sm {
+    border-right: none;
+}
+
 div.col-sm:hover {
     color: white;
     font-size: larger;
 }
 
-/* second image interval */
+/* location */
 
-section#intervaltwo {
-    height: 500px;
+section#location {
+    height: 900px;
+    background-color: #0c0f0cfa;
 }
 
+h3 {
+    color: white;
+    text-align: left;
+    padding-top: 200px;
+    font-size: 250%;
+    border-bottom: #cdcdcd32 1px solid;
+    padding-bottom: 20px;
+
+}
+
+ul#times{
+    font-size: 150%;
+    list-style-type: none;
+    color: white;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+ul#times > li {
+    padding-bottom: 20px;
+}
 
 /* footer */
 
 footer {
-    background-color: #021002;
+    background-color: #0b0f0b;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
