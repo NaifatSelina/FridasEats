@@ -52,6 +52,19 @@
             </ul>
         </nav>
     </header>
+    <!--login portal-->
+    <section id="loginpage">
+        <h3 style="width: 90%; margin-left: 40px;">Access Your Account</h3>
+        <div class="container-fluid" id="booking-div">
+            <form action="/account.php" method="POST" id="account-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
     <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-4">
@@ -103,8 +116,12 @@
     <!--font awesome script-->
     <script src="https://kit.fontawesome.com/bddd6cc069.js" crossorigin="anonymous"></script>
     <!--Google Maps API script -->
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm-hhzpvAIZeVbAyUticxT-E9hW_aXvIM&callback=initMap"></script>
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm-hhzpvAIZeVbAyUticxT-E9hW_aXvIM&callback=initMap">
+    </script>
     <!--javascript-->
     <script src="assets/js/maps.js"></script>
 </body>

@@ -315,7 +315,32 @@ section#booking {
   button[type="submit"]:hover {
     background-color: #444;
   }
-  
+
+/* account page */
+#loginpage {
+    height: 800px;
+    width: 100%;
+
+}
+
+#account-form {
+    background-color: #3c4739;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    float: inline-end;
+  }
+
+  section#loginpage {
+    height:1000px;
+    background-color: #121912;
+}
+
+#loginpage>h3 {
+    padding-top: 200px;
+    text-align: center;
+}
 
 /* footer */
 
