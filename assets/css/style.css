@@ -153,6 +153,26 @@ div.col-sm:hover {
     font-size: larger;
 }
 
+#review-btn {
+    position: absolute;
+    margin-top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #220b0b;
+    color: rgb(117, 117, 117);
+    font-size: 20px;
+    padding: 10px 22px;
+    border-color: #191f19;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#review-btn:hover {
+    color: white;
+}
+
+
 /* location */
 
 section#location {
