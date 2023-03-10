@@ -212,6 +212,15 @@ ul#address{
     float: right;
 }
 
+
+.menu-headings {
+    color: #021002;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 200%;
+}
+
+
 /* footer */
 
 footer {
