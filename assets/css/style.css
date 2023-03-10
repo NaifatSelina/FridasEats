@@ -252,12 +252,22 @@ div#menu-page {
 /* booking section */
 
 section#booking {
-    height:1100px;
+    height:1500px;
     background-color: #121912;
 }
 
 #booking>h3 {
+    padding-top: 200px;
+    text-align: center;
+}
+
+#res-disclaimer {
+    font-size: 140%;
+    color: rgb(133, 96, 88);
+    font-style: italic;
     padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
 }
 
 /* Style the form */
@@ -279,6 +289,8 @@ section#booking {
   label {
     display: block;
     margin-bottom: 0.5rem;
+    color: white;
+    font-style: italic;
   }
   
   input {
