@@ -55,6 +55,28 @@
     <!--booking portal-->
     <section id="booking">
         <h3 style="width: 90%; margin-left: 40px;" >Make A Reservation</h3>
+        <div class="container-fluid" id="booking-div">
+            <form action="/booking.php" method="POST" id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="checkin">Check-in date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                
+                <label for="checkout">Check-out date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit">Book Now</button>
+              </form>
+        </div>
     </section>
     <footer class="container-fluid">
         <div id="footer-details" class="row">
