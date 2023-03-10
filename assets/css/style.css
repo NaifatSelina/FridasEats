@@ -176,7 +176,7 @@ div.col-sm:hover {
 /* location */
 
 section#location {
-    height: 900px;
+    height: 1000px;
     background-color: #0c0f0cfa;
 }
 
@@ -208,12 +208,13 @@ ul#address{
     list-style-type: none;
     color: white;
     padding-bottom: 20px;
-    
     float: right;
 }
 
 div#map {
-    min-height: 360px;}
+    min-height: 360px;
+    padding-top: 50px;
+}
 
 
 .menu-headings {
