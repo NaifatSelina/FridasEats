@@ -249,6 +249,13 @@ div#menu-page {
     transform: scale(1.1);
   }
 
+/* booking section */
+
+section#booking {
+    height: 900px;
+    background-color: #121912;
+}
+
 /* footer */
 
 footer {
