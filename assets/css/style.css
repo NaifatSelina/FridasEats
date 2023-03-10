@@ -8,7 +8,7 @@ body {
 
 /* header */
 header {
-    background-color: #191f19;
+    background-color: #021002;
     color: #fafafa;
     padding-top: 30px;
     height: 120px;
@@ -85,6 +85,7 @@ h2 {
     font-size: 40px;
     font-family: Satisfy, sans-serif;
     border-bottom: #282828 1px solid;
+    width: 80%;
 }
 
 #food-image-one, #food-image-two {
@@ -126,7 +127,7 @@ p.int-text {
 /* reviews */
 
 section#reviews {
-    height: 600px;
+    height: 950px;
     background-color: #100700fd;
 }
 
@@ -140,13 +141,19 @@ div.col-sm {
     justify-content: flex-start;
     margin-top: 20%;
     border-right: #282828 1px solid;;
+    transition: font-size 0.5s ease;
+}
+
+div.col-sm:hover {
+    color: white;
+    font-size: larger;
 }
 
 
 /* footer */
 
 footer {
-    background-color: #191f19;
+    background-color: #021002;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
@@ -158,6 +165,13 @@ footer {
 p.inline-block {
     padding-bottom: 25px;
     padding-left: 15px;
+    transition: font-size 0.5s ease;
+}
+
+
+p.inline-block:hover {
+    font-size: large;
+
 }
 
 .form-control {
