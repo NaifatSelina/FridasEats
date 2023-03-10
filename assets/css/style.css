@@ -212,6 +212,9 @@ ul#address{
     float: right;
 }
 
+div#map {
+    min-height: 360px;}
+
 
 .menu-headings {
     color: #021002;
