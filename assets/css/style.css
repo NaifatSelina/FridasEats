@@ -149,6 +149,12 @@ div.col-sm:hover {
     font-size: larger;
 }
 
+/* second image interval */
+
+section#intervaltwo {
+    height: 500px;
+}
+
 
 /* footer */
 
