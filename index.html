@@ -250,15 +250,15 @@
                 <form onsubmit="return sendMail(this);" class="inline-block" action="#img-fluid" name="newsletterform" id="newsletterform">
                     <div class="mb-3">
                         <input type="text" class="form-control" name="first_name" id="first_name"
-                            placeholder="First Name*">
+                            placeholder="First Name*" required>
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control" name="last_name" id="last_name"
-                            placeholder="Last Name*">
+                            placeholder="Last Name*" required>
                     </div>
                     <div class="mb-3">
-                        <input type="emailaddress" class="form-control" name="emailaddress" id="emailaddress"
-                            placeholder="Email Address*">
+                        <input type="email" class="form-control" name="emailaddress" id="emailaddress"
+                            placeholder="Email Address*" required>
                     </div>
                     <div class="mb-3">
                         <p id="disclaimer">By signing up to our newsletter you are agreeing to recieve latest news and
