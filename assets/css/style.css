@@ -172,6 +172,57 @@ div.col-sm:hover {
     color: white;
 }
 
+/* review modal */
+
+h5#review-modal-label.modal-title {
+    color: white;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Satisfy, sans-serif;
+    border-bottom: #282828 1px solid;
+    width: 85%;
+}
+
+input#name.form-control, input#email.form-control, input#restaurant.form-control, select#rating.form-control, textarea#comments.form-control {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    background-color: #797979;
+}
+
+h2, h3{
+    margin: 0%;
+}
+
+div.w3-container {
+    background-color: #3c4739;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    float: inline-end;
+}
+
+.w3-modal-content {
+    background-color: #3c4739;
+}
+
+div.w3-container label {
+    font-size: 150%;
+}
+
+.w3-button {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    color: white;
+    font-size: xx-large;
+}
 
 /* location */
 
