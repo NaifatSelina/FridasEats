@@ -11,14 +11,27 @@
         content="Restaurant, food, zanzibar, booking, reservation, yummy, write a review, good food, mocktails">
     <!--tab title-->
     <title>Fridas' Eats.</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-UOwEXm5lvr3uxsq62nWIl1Ljk9T0hVylQNHj+KqVIZHhNw+oV8R6G1I7DfH9goScnnafZS+hSgP+oaxPQnzmwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-LjxR8WkOAS95mOyFOlKtAJTRh8W0Ytq3+X9Xx/mxj8mpTKWJ1vE1aSG+0DyM8kzWtYvqQj9XivD+Z8hJ5Bn03A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--favicon icon-->
+    <link rel="shortcut icon" href="assets/favicon/favicon_io/favicon.ico" type="image/x-icon">
     <!--bootstrap links-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bddd6cc069.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
-    <!--favicon icon-->
-    <link rel="shortcut icon" href="assets/favicon/favicon_io/favicon.ico" type="image/x-icon">
+
 
     <!-- Stylesheet -->
     <link href="index.css" rel="stylesheet" type="text/css" />
@@ -94,7 +107,8 @@
     </section>
     <!--interval-->
     <section id="interval">
-        <img src="assets/images/interval.jpg" id="int-img" alt="man in sea on small boat with sunset in background" class="img-fluid">
+        <img src="assets/images/interval.jpg" id="int-img" alt="man in sea on small boat with sunset in background"
+            class="img-fluid">
         <p class="int-text">In fast-paced London, take a break and indulge in an island inspired dining experience.</p>
     </section>
     <!--customer reviews-->
@@ -103,16 +117,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <p>I had a great time at Fridas' Eats. The food was flavorful and well-seasoned, and the service was friendly and attentive. I highly recommend the Chargrilled Prawns and the Passion Frida mocktail.</p>
+                    <p>I had a great time at Fridas' Eats. The food was flavorful and well-seasoned, and the service was
+                        friendly and attentive. I highly recommend the Chargrilled Prawns and the Passion Frida
+                        mocktail.</p>
                     <p style="font-style: oblique; padding-top: 20px; color: #484848da;">Angela White</p>
                     <div class="container-fluid">
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                    </div>
                 </div>
-                  </div>
 
                 <div class="col-sm">
                     I recently visited Fridas' Eats and was blown away by the delicious food and creative mocktails. The
@@ -144,57 +160,59 @@
             </div>
         </div>
         <!--review button-->
-        <button id="review-btn" type="button" class="btn btn-outline-light" onclick="location.href='';">Write a
-            Review</button>
+        <button id="review-btn" type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+            data-bs-target="#review-modal">Write a Review</button>
     </section>
     <!--review submission modal-->
-<div class="modal fade" id="review-modal" tabindex="-1" role="dialog" aria-labelledby="review-modal-label" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="review-modal-label">Submit a Review</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <div class="modal fade" id="review-modal" tabindex="-1" role="dialog" aria-labelledby="review-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="review-modal-label">Submit a Review</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="review-form">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="restaurant">Restaurant Name</label>
+                            <input type="text" class="form-control" id="restaurant" name="restaurant" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">Rating</label>
+                            <select class="form-control" id="rating" name="rating" required>
+                                <option value="" disabled selected>Choose a Rating</option>
+                                <option value="5">5 Stars</option>
+                                <option value="4">4 Stars</option>
+                                <option value="3">3 Stars</option>
+                                <option value="2">2 Stars</option>
+                                <option value="1">1 Star</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Comments</label>
+                            <textarea class="form-control" id="comments" name="comments" maxlength="500"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <form id="review-form">
-          <div class="modal-body">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="restaurant">Restaurant Name</label>
-              <input type="text" class="form-control" id="restaurant" name="restaurant" required>
-            </div>
-            <div class="form-group">
-              <label for="rating">Rating</label>
-              <select class="form-control" id="rating" name="rating" required>
-                <option value="" disabled selected>Choose a Rating</option>
-                <option value="5">5 Stars</option>
-                <option value="4">4 Stars</option>
-                <option value="3">3 Stars</option>
-                <option value="2">2 Stars</option>
-                <option value="1">1 Star</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="comments">Comments</label>
-              <textarea class="form-control" id="comments" name="comments" maxlength="500" required></textarea>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </form>
-      </div>
     </div>
-  </div>
 
     <!--second image interval-->
     <section id="intervaltwo">
@@ -269,8 +287,12 @@
     <!--font awesome script-->
     <script src="https://kit.fontawesome.com/bddd6cc069.js" crossorigin="anonymous"></script>
     <!--Google Maps API script -->
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm-hhzpvAIZeVbAyUticxT-E9hW_aXvIM&callback=initMap"></script>
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm-hhzpvAIZeVbAyUticxT-E9hW_aXvIM&callback=initMap">
+    </script>
     <!--javascript-->
     <script src="assets/js/maps.js"></script>
 </body>
