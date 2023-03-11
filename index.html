@@ -11,14 +11,18 @@
         content="Restaurant, food, zanzibar, booking, reservation, yummy, write a review, good food, mocktails">
     <!--tab title-->
     <title>Fridas' Eats.</title>
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-UOwEXm5lvr3uxsq62nWIl1Ljk9T0hVylQNHj+KqVIZHhNw+oV8R6G1I7DfH9goScnnafZS+hSgP+oaxPQnzmwQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"
-        integrity="sha512-LjxR8WkOAS95mOyFOlKtAJTRh8W0Ytq3+X9Xx/mxj8mpTKWJ1vE1aSG+0DyM8kzWtYvqQj9XivD+Z8hJ5Bn03A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--emailjs-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("pN8MNFS9cO0dgNY5L");
+            emailjs.send("service_i73601k", "template_fgjkd8n", {
+                name: "frida",
+                notes: "I would like to sign up..."
+            })
+        })();
+    </script>
     <!--favicon icon-->
     <link rel="shortcut icon" href="assets/favicon/favicon_io/favicon.ico" type="image/x-icon">
     <!--bootstrap links-->
@@ -61,12 +65,13 @@
         </nav>
     </header>
     <!--main image-->
-        <div>
-        <img src="assets/images/compressedmainimg.jpg" id="main-image" class="img-fluid" alt="an image of a tropical restaurant">
+    <div>
+        <img src="assets/images/compressedmainimg.jpg" id="main-image" class="img-fluid"
+            alt="an image of a tropical restaurant">
         <!--booking button-->
         <button id="booking-btn" type="button" class="btn btn-outline-dark" onclick="location.href='book.html';">Make a
             Reservation</button>
-        </div>    
+    </div>
     <!--our passion-->
     <section id="our-passion">
         <div class="container">
@@ -75,7 +80,8 @@
                 <h2 class="container-fluid">Our Passion</h2>
                 <div class="col align-self-start">
                     <!--our passion image-->
-                    <img src="assets/images/compressedfoodimg.jpg" id="food-image-one" class="rounded float-left" alt="grilled seafood dish">
+                    <img src="assets/images/compressedfoodimg.jpg" id="food-image-one" class="rounded float-left"
+                        alt="grilled seafood dish">
                 </div>
                 <div class="col align-self-center">
                     <p class="our-text">Fridas' Eats is a 5 star restaurant located in Mayfair, London, serving the
@@ -92,7 +98,8 @@
                     and tropic decor to ensure a highly relaxing experience.</p>
                 <div class="col align-self-end">
                     <!--our passion image-->
-                    <img src="assets/images/compressedfoodimg2.jpg" id="food-image-two" class="rounded float-right" alt="grilled seafood dish">
+                    <img src="assets/images/compressedfoodimg2.jpg" id="food-image-two" class="rounded float-right"
+                        alt="grilled seafood dish">
                 </div>
             </div>
         </div>
@@ -161,44 +168,47 @@
             <div class="w3-container">
                 <span onclick="document.getElementById('id01').style.display='none'"
                     class="w3-button w3-display-topright">&times;</span>
-                    <h5 class="modal-title" id="review-modal-label">Submit a Review</h5>
-                    <form id="review-form">
-                        <div class="modal-body">
-                          <div class="form-group">
+                <h5 class="modal-title" id="review-modal-label">Submit a Review</h5>
+                <form id="review-form">
+                    <div class="modal-body">
+                        <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" class="form-control" id="name" name="name" required>
-                          </div>
-                          <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="email">Email address</label>
                             <input type="email" class="form-control" id="email" name="email" required>
-                          </div>
-                          <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="rating">Rating</label>
                             <select class="form-control" id="rating" name="rating" required>
-                              <option value="" disabled selected>Choose a Rating</option>
-                              <option value="5">5 Stars</option>
-                              <option value="4">4 Stars</option>
-                              <option value="3">3 Stars</option>
-                              <option value="2">2 Stars</option>
-                              <option value="1">1 Star</option>
+                                <option value="" disabled selected>Choose a Rating</option>
+                                <option value="5">5 Stars</option>
+                                <option value="4">4 Stars</option>
+                                <option value="3">3 Stars</option>
+                                <option value="2">2 Stars</option>
+                                <option value="1">1 Star</option>
                             </select>
-                          </div>
-                          <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="comments">Comments</label>
-                            <textarea class="form-control" id="comments" name="comments" maxlength="500" required></textarea>
-                          </div>
+                            <textarea class="form-control" id="comments" name="comments" maxlength="500"
+                                required></textarea>
                         </div>
-                        <div class="modal-footer">
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('id01').style.display='none'">Close</button>
-                        </div>
-                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            onclick="document.getElementById('id01').style.display='none'">Close</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
     <!--second image interval-->
     <div id="intervaltwo">
-        <img src="assets/images/compressedmainimgcopy.jpg" id="second-image" class="img-fluid" alt="an image of a tropical restaurant">
+        <img src="assets/images/compressedmainimgcopy.jpg" id="second-image" class="img-fluid"
+            alt="an image of a tropical restaurant">
     </div>
     <!--location-->
     <div id="location">
@@ -251,7 +261,8 @@
                             placeholder="Last Name*">
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" name="email" id="newsletter-email" placeholder="Email Address*">
+                        <input type="email" class="form-control" name="email" id="newsletter-email"
+                            placeholder="Email Address*">
                     </div>
                     <div class="mb-3">
                         <p id="disclaimer">By signing up to our newsletter you are agreeing to recieve latest news and
