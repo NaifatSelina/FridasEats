@@ -16,6 +16,7 @@ header {
 
 h1, .text-muted, h3 {
     padding-left: 15px;
+    font-family: Libre Caslon Display, sans-serif;
 }
 
 .text-muted:hover {
