@@ -103,7 +103,7 @@ h2 {
 
 /* interval */
 
-section#interval {
+div#interval {
     height: 500px;
     width: 100%;
     overflow: scroll;
@@ -227,7 +227,7 @@ div.w3-container label {
 
 /* location */
 
-section#location {
+div#location {
     height: 1000px;
     background-color: #0c0f0cfa;
 }
