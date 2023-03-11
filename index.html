@@ -247,8 +247,7 @@
             </div>
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">Newsletter</h5>
-                <form onsubmit="return sendMail(this);" method="POST" class="inline-block" action="#img-fluid" name="newsletterform" id="newsletterform"
-                    novalidate="novalidate">
+                <form onsubmit="return sendMail(this);" class="inline-block" action="#img-fluid" name="newsletterform" id="newsletterform">
                     <div class="mb-3">
                         <input type="text" class="form-control" name="first_name" id="first_name"
                             placeholder="First Name*">
@@ -258,7 +257,7 @@
                             placeholder="Last Name*">
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" name="email" id="newsletter-email"
+                        <input type="emailaddress" class="form-control" name="emailaddress" id="emailaddress"
                             placeholder="Email Address*">
                     </div>
                     <div class="mb-3">
@@ -266,7 +265,7 @@
                             updates regarding Fridas' Eats.</p>
                     </div>
                     <div class="mb-3">
-                        <input type="submit" name="submit-btn" id="submit-btn" value="Sign Up">
+                        <input type="submit" name="submit-btn" id="submit-btn" value="Sign Up"> 
                     </div>
                 </form>
             </div>
