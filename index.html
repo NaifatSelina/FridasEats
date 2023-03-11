@@ -17,10 +17,7 @@
     <script type="text/javascript">
         (function () {
             emailjs.init("pN8MNFS9cO0dgNY5L");
-            emailjs.send("service_i73601k", "template_fgjkd8n", {
-                name: "frida",
-                notes: "I would like to sign up..."
-            })
+    
         })();
     </script>
     <!--favicon icon-->
@@ -250,7 +247,7 @@
             </div>
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">Newsletter</h5>
-                <form class="inline-block" action="#img-fluid" name="newsletterform" id="newsletterform"
+                <form onsubmit="return sendMail(this);" method="POST" class="inline-block" action="#img-fluid" name="newsletterform" id="newsletterform"
                     novalidate="novalidate">
                     <div class="mb-3">
                         <input type="text" class="form-control" name="first_name" id="first_name"
@@ -287,6 +284,8 @@
     </script>
     <!--javascript-->
     <script src="assets/js/maps.js"></script>
+    <!--newsletter-->
+    <script src="assets/js/sendemail.js"></script>
 </body>
 
 </html>
