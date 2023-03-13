@@ -20,6 +20,8 @@
     
         })();
     </script>
+        <!--newsletter-->
+    <script src="assets/js/sendemail.js"></script>
     <!--favicon icon-->
     <link rel="shortcut icon" href="assets/favicon/favicon_io/favicon.ico" type="image/x-icon">
     <!--bootstrap links-->
@@ -247,7 +249,7 @@
             </div>
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">Newsletter</h5>
-                <form onsubmit="return sendMail(this);" class="inline-block" action="#img-fluid" name="newsletterform" id="newsletterform">
+                <form onsubmit="sendEmail(this);" class="inline-block" action="#" name="newsletterform" id="newsletterform">
                     <div class="mb-3">
                         <input type="text" class="form-control" name="first_name" id="first_name"
                             placeholder="First Name*" required>
@@ -283,8 +285,6 @@
     </script>
     <!--javascript-->
     <script src="assets/js/maps.js"></script>
-    <!--newsletter-->
-    <script src="assets/js/sendemail.js"></script>
 </body>
 
 </html>
