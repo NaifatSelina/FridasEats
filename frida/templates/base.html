@@ -4,255 +4,232 @@
 <html class="h-100">
 
 <head>
-    <!--tab title-->
-    <title>Fridas' Eats.</title>
-    <!--links-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Fridas' Eats restaurant, make a reservation, eat zanibari food, zanzibar cuisine, tropical atmosphere">
     <meta name="keywords"
         content="Restaurant, food, zanzibar, booking, reservation, yummy, write a review, good food, mocktails">
+    <!--tab title-->
+    <title>Fridas' Eats.</title>
     <!--emailjs-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script>
         (function () {
             emailjs.init("pN8MNFS9cO0dgNY5L");
-
+    
         })();
     </script>
-    <!--newsletter-->
-    <script src="assets/js/sendemail.js"></script>
+        <!--newsletter-->
+    <script src="{% static 'assets/js/sendemail.js' %}"></script>
     <!--favicon icon-->
-    <link rel="shortcut icon" href="assets/favicon/favicon_io/favicon.ico" type="image/x-icon">ƒ
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'assets/favicon/favicon_io/favicon.ico' %}" type="image/x-icon">
+    <!--bootstrap links-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bddd6cc069.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css">
+    <!-- Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-</head>
-
-<body class="d-flex flex-column h-100 main-bg">
-
+<body>
     <header class="container-fluid">
         <!--main heading and sub heading-->
         <h1>Fridas' Eats</h1>
         <small class="text-muted">A Warm Welcome To Zanzibar | Karibu Zanzibar</small>
 
-        <!--navigation links-->
+    <!--navigation links-->
 
-        <nav class="navbar fixed-top nav justify-content-end">
-            <ul id="menu" class="nav justify-content-end">
-                <li>
-                    <a href="{% url 'home' %}">Home</a>
-                </li>
-                <li>
-                    <a href="menu.html">Menu</a>
-                </li>
-                <li>
-                    <a href="gallery.html">Gallery</a>
-                </li>
-                <li>
-                    <a href="book.html">Book</a>
-                </li>
-                <li>
-                    <a href="account.html">Account</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="flex-shrink-0 main-bg">
+    <nav class="navbar fixed-top nav justify-content-end">
+        <ul id="menu" class="nav justify-content-end">
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'menu' %}">Menu</a>
+            </li>
+            <li>
+                <a href="{% url 'gallery' %}">Gallery</a>
+            </li>
+            <li>
+                <a href="{% url 'book' %}">Book</a>
+            </li>
+            <li>
+                <a href="{% url 'account' %}">Account</a>
+            </li>
+        </ul>
+    </nav>
+</header>
         {% block content %}
-        <!--main image-->
-        <div>
-            <img src="assets/images/compressedmainimg.jpg" id="main-image" class="img-fluid"
-                alt="an image of a tropical restaurant">
-            <!--booking button-->
-            <button id="booking-btn" type="button" class="btn btn-outline-dark"
-                onclick="location.href='book.html';">Make a
-                Reservation</button>
-        </div>
-        <!--our passion-->
-        <section id="our-passion">
-            <div class="container">
-                <div class="row">
-                    <!--our passion heading-->
-                    <h2 class="container-fluid">Our Passion</h2>
-                    <div class="col align-self-start">
-                        <!--our passion image-->
-                        <img src="assets/images/compressedfoodimg.jpg" id="food-image-one" class="rounded float-left"
-                            alt="grilled seafood dish">
-                    </div>
-                    <div class="col align-self-center">
-                        <p class="our-text">Fridas' Eats is a 5 star restaurant located in Mayfair, London, serving the
-                            upmost authentic Zanzibari food, our aim is to be unique flavour, dishes and a unique dining
-                            experience to your fingertips, right in the heart of London.</p>
-                        <p class="our-text">Our menu includes a wide range of Zanzibari dishes prepared freshly
-                            everyday,
-                            from our lunch menu to our al carte and dessert menu, there is something for everyone. Fresh
-                            seafood and Mishkaki bought to the table sizzling are just two of the delicacies on our
-                            menu.
-                        </p>
-                    </div>
-                    <p class="our-text">Our restaurant aims to provide a relaxing atmosphere and a fine dining
-                        experience to
-                        you. When stepping in to Fridas' Eats you'll be transported to a Zanzibar with the choice of
-                        music,
-                        various pieces of Zanzibari art sourced from Stone Town covering the walls and the low lit
-                        ambience
-                        and tropic decor to ensure a highly relaxing experience.</p>
-                    <div class="col align-self-end">
-                        <!--our passion image-->
-                        <img src="assets/images/compressedfoodimg2.jpg" id="food-image-two" class="rounded float-right"
-                            alt="grilled seafood dish">
-                    </div>
+            <!--main image-->
+    <div>
+        <img src="{% static 'assets/images/compressedmainimg.jpg' %}" id="main-image" class="img-fluid"
+            alt="an image of a tropical restaurant">
+        <!--booking button-->
+        <button id="booking-btn" type="button" class="btn btn-outline-dark" onclick="location.href='book.html';">Make a
+            Reservation</button>
+    </div>
+    <!--our passion-->
+    <section id="our-passion">
+        <div class="container">
+            <div class="row">
+                <!--our passion heading-->
+                <h2 class="container-fluid">Our Passion</h2>
+                <div class="col align-self-start">
+                    <!--our passion image-->
+                    <img src="{% static 'assets/images/compressedfoodimg.jpg' %}" id="food-image-one" class="rounded float-left"
+                        alt="grilled seafood dish">
+                </div>
+                <div class="col align-self-center">
+                    <p class="our-text">Fridas' Eats is a 5 star restaurant located in Mayfair, London, serving the
+                        upmost authentic Zanzibari food, our aim is to be unique flavour, dishes and a unique dining
+                        experience to your fingertips, right in the heart of London.</p>
+                    <p class="our-text">Our menu includes a wide range of Zanzibari dishes prepared freshly everyday,
+                        from our lunch menu to our al carte and dessert menu, there is something for everyone. Fresh
+                        seafood and Mishkaki bought to the table sizzling are just two of the delicacies on our menu.
+                    </p>
+                </div>
+                <p class="our-text">Our restaurant aims to provide a relaxing atmosphere and a fine dining experience to
+                    you. When stepping in to Fridas' Eats you'll be transported to a Zanzibar with the choice of music,
+                    various pieces of Zanzibari art sourced from Stone Town covering the walls and the low lit ambience
+                    and tropic decor to ensure a highly relaxing experience.</p>
+                <div class="col align-self-end">
+                    <!--our passion image-->
+                    <img src="{% static 'assets/images/compressedfoodimg2.jpg' %}" id="food-image-two" class="rounded float-right"
+                        alt="grilled seafood dish">
                 </div>
             </div>
-        </section>
-        <!--interval-->
-        <div id="interval">
-            <img src="assets/images/interval.jpg" id="int-img" alt="man in sea on small boat with sunset in background"
-                class="img-fluid">
-            <p class="int-text">In fast-paced London, take a break and indulge in an island inspired dining experience.
-            </p>
         </div>
-        <!--customer reviews-->
-        <section id="reviews">
-            <h2 class="container"> Reviews</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <p>I had a great time at Fridas' Eats. The food was flavorful and well-seasoned, and the service
-                            was
-                            friendly and attentive. I highly recommend the Chargrilled Prawns and the Passion Frida
-                            mocktail.</p>
-                        <p style="font-style: oblique; padding-top: 20px; color: #484848da;">Angela White</p>
-                        <div class="container-fluid">
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                        </div>
+    </section>
+    <!--interval-->
+    <div id="interval">
+        <img src="{% static 'assets/images/interval.jpg' %}" id="int-img" alt="man in sea on small boat with sunset in background"
+            class="img-fluid">
+        <p class="int-text">In fast-paced London, take a break and indulge in an island inspired dining experience.</p>
+    </div>
+    <!--customer reviews-->
+    <section id="reviews">
+        <h2 class="container"> Reviews</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <p>I had a great time at Fridas' Eats. The food was flavorful and well-seasoned, and the service was
+                        friendly and attentive. I highly recommend the Chargrilled Prawns and the Passion Frida
+                        mocktail.</p>
+                    <p style="font-style: oblique; padding-top: 20px; color: #484848da;">Angela White</p>
+                    <div class="container-fluid">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
                     </div>
+                </div>
 
-                    <div class="col-sm">
-                        I recently visited Fridas' Eats and was blown away by the delicious food and creative mocktails.
-                        The
-                        Mashkaki flatbread was a standout dish, and the lavender-infused virgin gin and tonic was a
-                        perfect
-                        complement.
-                        <p style="font-style: oblique; padding-top: 20px; color: #484848da;">Nawal Abdalla</p>
-                        <div class="container-fluid">
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                        </div>
+                <div class="col-sm">
+                    I recently visited Fridas' Eats and was blown away by the delicious food and creative mocktails. The
+                    Mashkaki flatbread was a standout dish, and the lavender-infused virgin gin and tonic was a perfect
+                    complement.
+                    <p style="font-style: oblique; padding-top: 20px; color: #484848da;">Nawal Abdalla</p>
+                    <div class="container-fluid">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
                     </div>
-                    <div class="col-sm" id="lastdiv">
-                        If you're looking for authentic Zanzibari cuisine, look no further than Fridas' Eats. The Zanz
-                        Mixed
-                        Grill was to die for, and the warm and ambient feel of the
-                        restaurant made it so I didn't even feel like I was in England! I can't wait to go back and try
-                        more
-                        of their menu.
-                        <p style="font-style: oblique; padding-top: 20px; color: #484848da;">Naifat Selina</p>
-                        <div class="container-fluid">
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                        </div>
+                </div>
+                <div class="col-sm" id="lastdiv">
+                    If you're looking for authentic Zanzibari cuisine, look no further than Fridas' Eats. The Zanz Mixed
+                    Grill was to die for, and the warm and ambient feel of the
+                    restaurant made it so I didn't even feel like I was in England! I can't wait to go back and try more
+                    of their menu.
+                    <p style="font-style: oblique; padding-top: 20px; color: #484848da;">Naifat Selina</p>
+                    <div class="container-fluid">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
                     </div>
                 </div>
             </div>
-            <!--review button-->
-            <button id="review-btn" type="button" class="btn btn-outline-light w3-button"
-                onclick="document.getElementById('id01').style.display='block'">Write a Review</button>
-        </section>
-        <!--review submission modal-->
-        <div id="id01" class="w3-modal">
-            <div class="w3-modal-content">
-                <div class="w3-container">
-                    <span onclick="document.getElementById('id01').style.display='none'"
-                        class="w3-button w3-display-topright">&times;</span>
-                    <h5 class="modal-title" id="review-modal-label">Submit a Review</h5>
-                    <form id="review-form">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="rating">Rating</label>
-                                <select class="form-control" id="rating" name="rating" required>
-                                    <option value="" disabled selected>Choose a Rating</option>
-                                    <option value="5">5 Stars</option>
-                                    <option value="4">4 Stars</option>
-                                    <option value="3">3 Stars</option>
-                                    <option value="2">2 Stars</option>
-                                    <option value="1">1 Star</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="comments">Comments</label>
-                                <textarea class="form-control" id="comments" name="comments" maxlength="500"
-                                    required></textarea>
-                            </div>
+        </div>
+        <!--review button-->
+        <button id="review-btn" type="button" class="btn btn-outline-light w3-button"
+            onclick="document.getElementById('id01').style.display='block'">Write a Review</button>
+    </section>
+    <!--review submission modal-->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h5 class="modal-title" id="review-modal-label">Submit a Review</h5>
+                <form id="review-form">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
-                                onclick="document.getElementById('id01').style.display='none'">Close</button>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
-                    </form>
-                </div>
+                        <div class="form-group">
+                            <label for="rating">Rating</label>
+                            <select class="form-control" id="rating" name="rating" required>
+                                <option value="" disabled selected>Choose a Rating</option>
+                                <option value="5">5 Stars</option>
+                                <option value="4">4 Stars</option>
+                                <option value="3">3 Stars</option>
+                                <option value="2">2 Stars</option>
+                                <option value="1">1 Star</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Comments</label>
+                            <textarea class="form-control" id="comments" name="comments" maxlength="500"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            onclick="document.getElementById('id01').style.display='none'">Close</button>
+                    </div>
+                </form>
             </div>
         </div>
-        <!--second image interval-->
-        <div id="intervaltwo">
-            <img src="assets/images/compressedmainimgcopy.jpg" id="second-image" class="img-fluid"
-                alt="an image of a tropical restaurant">
+    </div>
+    <!--second image interval-->
+    <div id="intervaltwo">
+        <img src="{% static 'assets/images/compressedmainimgcopy.jpg' %}" id="second-image" class="img-fluid"
+            alt="an image of a tropical restaurant">
+    </div>
+    <!--location-->
+    <div id="location">
+        <div class="container">
+            <h3>Opening Hours</h3>
+            <ul id="times">
+                <li>Monday - Friday: 11:00am - 9:00pm</li>
+                <li>Saturday: 10:00am - 10:00pm</li>
+                <li>Sunday: Closed</li>
+            </ul>
+            <ul id="address">
+                <li>53A BERK STREET</li>
+                <li>MAYFAIR, LONDON</li>
+                <li>W1J 9HA</li>
+            </ul>
         </div>
-        <!--location-->
-        <div id="location">
-            <div class="container">
-                <h3>Opening Hours</h3>
-                <ul id="times">
-                    <li>Monday - Friday: 11:00am - 9:00pm</li>
-                    <li>Saturday: 10:00am - 10:00pm</li>
-                    <li>Sunday: Closed</li>
-                </ul>
-                <ul id="address">
-                    <li>53A BERK STREET</li>
-                    <li>MAYFAIR, LONDON</li>
-                    <li>W1J 9HA</li>
-                </ul>
-            </div>
-            <div id="map" class="container"></div>
-        </div>
+        <div id="map" class="container"></div>
+    </div>
         {% endblock content %}
-    </main>
 
     <!-- Footer -->
     <footer class="container-fluid">
@@ -278,15 +255,14 @@
             </div>
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">Newsletter</h5>
-                <form onsubmit="sendEmail(this);" class="inline-block" action="#" name="newsletterform"
-                    id="newsletterform">
+                <form onsubmit="sendEmail(this);" class="inline-block" action="#" name="newsletterform" id="newsletterform">
                     <div class="mb-3">
                         <input type="text" class="form-control" name="first_name" id="first_name"
                             placeholder="First Name*" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name*"
-                            required>
+                        <input type="text" class="form-control" name="last_name" id="last_name"
+                            placeholder="Last Name*" required>
                     </div>
                     <div class="mb-3">
                         <input type="email" class="form-control" name="emailaddress" id="emailaddress"
@@ -297,24 +273,25 @@
                             updates regarding Fridas' Eats.</p>
                     </div>
                     <div class="mb-3">
-                        <input type="submit" name="submit-btn" id="submit-btn" value="Sign Up">
+                        <input type="submit" name="submit-btn" id="submit-btn" value="Sign Up"> 
                     </div>
                 </form>
             </div>
 
         </div>
     </footer>
-    <!--font awesome script-->
-    <script src="https://kit.fontawesome.com/bddd6cc069.js" crossorigin="anonymous"></script>
-    <!--Google Maps API script -->
-    <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm-hhzpvAIZeVbAyUticxT-E9hW_aXvIM&callback=initMap">
-    </script>
-    <!--javascript-->
-    <script src="assets/js/maps.js"></script>
+        <!--font awesome script-->
+        <script src="https://kit.fontawesome.com/bddd6cc069.js" crossorigin="anonymous"></script>
+        <!--Google Maps API script -->
+        <script
+            src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm-hhzpvAIZeVbAyUticxT-E9hW_aXvIM&callback=initMap">
+        </script>
+        <!--javascript-->
+        <script src="{% static 'assets/js/maps.js' %}"></script>
+        <script src="{% static 'assets/js/review.js' %}"></script>
 </body>
 
 </html>

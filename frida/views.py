@@ -5,10 +5,25 @@ from .models import Review
 
 class ReviewList(generic.ListView):
     model = Review
-    queryset = Post.objects.filter(status=1).order_by("-author")
-    template_name = "index.html"
+    template_name = "base.html"
     paginate_by = 3
 
 
 def home_page(request):
-    return render((request), 'frida/index.html')
+    return render((request), 'base.html')
+
+
+def menu_page(request):
+    return render((request), 'menu.html')
+
+
+def gallery_page(request):
+    return render((request), 'gallery.html')
+
+
+def book_page(request):
+    return render((request), 'book.html')
+
+
+def account_page(request):
+    return render((request), 'account.html')

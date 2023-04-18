@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from frida.views import home_page
+from frida.views import home_page, ReviewList, menu_page, gallery_page, book_page, account_page
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_page, name='home_page'),
-    path('summernote/', include('django_summernote.urls')),
+    path('', ReviewList.as_view(), name='review-list'),
+    path('home/', home_page, name='home'),
+    path('menu/', menu_page, name='menu'),
+    path('gallery/', gallery_page, name='gallery'),
+    path('book/', book_page, name='book'),
+    path('account/', account_page, name='account'),
 ]
