@@ -21,7 +21,7 @@ from frida.views import home_page, ReviewList, menu_page, gallery_page, book_pag
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', ReviewList.as_view(), name='review-list'),
-    path('home/', home_page, name='home'),
+    path('', home_page, name='home'),
     path('menu/', menu_page, name='menu'),
     path('gallery/', gallery_page, name='gallery'),
     path('book/', book_page, name='book'),
