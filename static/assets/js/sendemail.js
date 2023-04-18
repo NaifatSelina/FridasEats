@@ -8,6 +8,8 @@ function sendEmail(contactForm) {
         .then(
             function (response) {
                 console.log("SUCCESS", response);
+                location.reload(); // Reload the current page after successful submission
+                window.scrollTo(0, 0); // Scroll to the top of the page
             },
             function (error) {
                 console.log("FAILED", error);
