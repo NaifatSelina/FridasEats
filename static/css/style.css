@@ -342,16 +342,17 @@ section#booking {
     display: block;
     margin-bottom: 0.5rem;
     color: white;
-    font-style: italic;
+    font-size: 140%;
   }
   
   input {
     display: block;
     margin-bottom: 1rem;
-    padding: 0.5rem;
+    padding: 0.7rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
+    font-size: 120%;
   }
   
   button[type="submit"] {
@@ -368,11 +369,28 @@ section#booking {
     background-color: #444;
   }
 
+  .primaryAction {
+    font-size: 120%;
+    font-family: Libre Caslon Display, sans-serif;
+    letter-spacing: 1px;
+  }
+
 /* account page */
 #loginpage {
     height: 800px;
     width: 100%;
 
+}
+
+#account_text {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 50px;
+}
+
+#signup {
+    text-decoration: underline;
 }
 
 #account-form {
