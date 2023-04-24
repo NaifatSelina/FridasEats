@@ -375,8 +375,20 @@ section#booking {
     letter-spacing: 1px;
   }
 
+  #signup_btn {
+    font-size: 120%;
+    font-family: Libre Caslon Display, sans-serif;
+    letter-spacing: 1px;
+  }
+
+ul.errorlist.nonfield {
+    color: white;
+    text-align: center;
+    list-style-type: none;
+}
+
 /* account page */
-#loginpage {
+.loginpage {
     height: 800px;
     width: 100%;
 
@@ -389,7 +401,18 @@ section#booking {
     padding-top: 50px;
 }
 
+#signup_text {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 50px;
+}
+
 #signup {
+    text-decoration: underline;
+}
+
+#signin {
     text-decoration: underline;
 }
 
@@ -402,12 +425,12 @@ section#booking {
     float: inline-end;
   }
 
-  section#loginpage {
+  section.loginpage {
     height:1000px;
     background-color: #121912;
 }
 
-#loginpage>h3 {
+.loginpage>h3 {
     padding-top: 200px;
     text-align: center;
 }
