@@ -59,9 +59,15 @@
             <li>
                 <a href="{% url 'book' %}">Book</a>
             </li>
+            {% if user.is_authenticated %}
             <li>
-                <a href="{% url 'account' %}">Account</a>
+                <a href="{% url 'account_logout' %}">Logout</a>
             </li>
+            {% else %}
+            <li>
+                <a href="{% url 'account_login' %}">Account</a>
+            </li>
+            {% endif %}
         </ul>
     </nav>
 </header>
