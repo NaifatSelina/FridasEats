@@ -408,6 +408,23 @@ ul.errorlist.nonfield {
     padding-top: 50px;
 }
 
+#signout {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 50px;
+}
+
+#signoutpage {
+   text-align: center;
+}
+
+button#signout_btn {
+    margin-top: 7%;
+    font-size: 140%;
+    letter-spacing: 1px;
+}
+
 #signup {
     text-decoration: underline;
 }
