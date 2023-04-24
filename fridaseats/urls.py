@@ -26,4 +26,5 @@ urlpatterns = [
     path('gallery/', gallery_page, name='gallery'),
     path('book/', book_page, name='book'),
     path('account/', account_page, name='account'),
+    path('accounts/', include('allauth.urls')),
 ]
