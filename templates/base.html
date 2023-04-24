@@ -167,8 +167,10 @@
             </div>
         </div>
         <!--review button-->
+        {% if user.is_authenticated %}
         <button id="review-btn" type="button" class="btn btn-outline-light w3-button"
             onclick="document.getElementById('id01').style.display='block'">Write a Review</button>
+        {% endif %}
     </section>
     <!--review submission modal-->
     <div id="id01" class="w3-modal">
