@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from frida.views import home_page, ReviewList, menu_page, gallery_page, book_page, account_page
+from frida.views import home_page, ReviewList, menu_page, gallery_page, book_page, account_page, add_review
 
 
 urlpatterns = [
@@ -27,4 +27,5 @@ urlpatterns = [
     path('book/', book_page, name='book'),
     path('account/', account_page, name='account'),
     path('accounts/', include('allauth.urls')),
+    path('', add_review, name='add_review')
 ]

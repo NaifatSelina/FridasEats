@@ -27,3 +27,18 @@ def book_page(request):
 
 def account_page(request):
     return render((request), 'account.html')
+
+
+def add_review(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        rating = request.POST.get('rating')
+        comments = request.POST.get('comments')
+
+        review = Review(name=name, email=email, rating=rating, comments=comments)
+        review.save()
+        
+        return redirect('') 
+    
+    return render(request, 'base.html')
