@@ -38,7 +38,7 @@ def add_review(request):
 
         review = Review(name=name, email=email, rating=rating, comments=comments)
         review.save()
-        
-        return redirect('') 
     
+        return redirect('')
+
     return render(request, 'base.html')
