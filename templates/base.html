@@ -59,9 +59,11 @@
                 <li>
                     <a href="{% url 'gallery' %}">Gallery</a>
                 </li>
+                {% if user.is_authenticated %}
                 <li>
                     <a href="{% url 'book' %}">Book</a>
                 </li>
+                {% endif %}
                 {% if user.is_authenticated %}
                 <li>
                     <a href="{% url 'account_logout' %}">Logout</a>
@@ -81,7 +83,8 @@
             alt="an image of a tropical restaurant">
         <!--booking button-->
         <button id="booking-btn" type="button" class="btn btn-outline-dark"
-            onclick="location.href='{% url 'book' %}';">Make a
+        onclick="location.href='https://8000-naifatselina-fridaseats-nj6w4djq8dm.ws-eu95.gitpod.io/accounts/login/';"
+        >Make a
             Reservation</button>
     </div>
     <!--our passion-->
