@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import generic
 from .models import Review
 from .forms import ReviewForm
@@ -12,8 +12,23 @@ class ReviewList(generic.ListView):
     }
 
 
+def post():
+
+    review_form = ReviewForm(data=request.POST)
+
+    if review_form.is_valid():
+        review_form.instance.email = request.user.email
+        review_form.instance.name = request.user.author
+        review = review_form.save(commit=False)
+        review.post = post
+        review.save()
+    else:
+        review_form = ReviewForm()
+
+
 def home_page(request):
-    return render((request), 'base.html')
+    # return render((request), 'base.html')
+    return render((request), 'base.html', {"review_form": ReviewForm()})
 
 
 def menu_page(request):
@@ -34,14 +49,10 @@ def account_page(request):
 
 def add_review(request):
     if request.method == 'POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        rating = request.POST.get('rating')
-        comments = request.POST.get('comments')
+        review_form = ReviewForm(data=request.POST)
 
-        review = Review(name=name, email=email, rating=rating, comments=comments)
-        review.save()
-
-        return redirect('')
+        review_form.save()
+        return redirect('home')
 
     return render(request, 'base.html')
+
