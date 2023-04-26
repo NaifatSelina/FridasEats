@@ -82,11 +82,18 @@
         <img src="{% static 'assets/images/compressedmainimg.jpg' %}" id="main-image" class="img-fluid"
             alt="an image of a tropical restaurant">
         <!--booking button-->
+        {% if user.is_authenticated %}
+        <button id="booking-btn" type="button" class="btn btn-outline-dark"
+        onclick="location.href='{% url 'book' %}'"
+        >Make a
+            Reservation</button>
+        {% else %}
         <button id="booking-btn" type="button" class="btn btn-outline-dark"
         onclick="location.href='https://8000-naifatselina-fridaseats-nj6w4djq8dm.ws-eu95.gitpod.io/accounts/login/';"
         >Make a
             Reservation</button>
     </div>
+    {% endif %}
     <!--our passion-->
     <section id="our-passion">
         <div class="container">
