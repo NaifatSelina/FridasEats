@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 
 <!DOCTYPE html>
 <html class="h-100">
@@ -182,7 +183,9 @@
                 <span onclick="document.getElementById('id01').style.display='none'"
                     class="w3-button w3-display-topright">&times;</span>
                 <h5 class="modal-title" id="review-modal-label">Submit a Review</h5>
-                <form id="review-form" data-url="{% url 'add_review'%}" method="post" action="{% url 'add_review' %}">
+                {% if user.is_authenticated %}
+                <form id="review-form" method="post">
+                    {{ review_form | crispy}}
                     {% csrf_token %}
                     <div class="modal-body">
                         <div class="form-group">
@@ -216,6 +219,7 @@
                             onclick="document.getElementById('id01').style.display='none'">Close</button>
                     </div>
                 </form>
+                {% endif %}
             </div>
         </div>
     </div>

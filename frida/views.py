@@ -1,12 +1,15 @@
 from django.shortcuts import render
 from django.views import generic
 from .models import Review
+from .forms import ReviewForm
 
 
 class ReviewList(generic.ListView):
     model = Review
     template_name = "base.html"
-    paginate_by = 3
+    paginate_by = 3, {
+       "review_form": ReviewForm()
+    }
 
 
 def home_page(request):
@@ -38,7 +41,7 @@ def add_review(request):
 
         review = Review(name=name, email=email, rating=rating, comments=comments)
         review.save()
-    
+
         return redirect('')
 
     return render(request, 'base.html')
