@@ -1,33 +1,23 @@
 from django.shortcuts import render, redirect
 from django.views import generic
-from .models import Review
-from .forms import ReviewForm
+from .models import Review, Booking
+from .forms import ReviewForm, BookingForm
+
+# only 3 reviews can appear on page
 
 
 class ReviewList(generic.ListView):
-    model = Review
+    model = Review, Booking
     template_name = "base.html"
     paginate_by = 3, {
-       "review_form": ReviewForm()
+       "review_form": ReviewForm(),
+       "booking_form": BookingForm()
     }
 
-
-def post():
-
-    review_form = ReviewForm(data=request.POST)
-
-    if review_form.is_valid():
-        review_form.instance.email = request.user.email
-        review_form.instance.name = request.user.author
-        review = review_form.save(commit=False)
-        review.post = post
-        review.save()
-    else:
-        review_form = ReviewForm()
+# displays each webpage
 
 
 def home_page(request):
-    # return render((request), 'base.html')
     return render((request), 'base.html', {"review_form": ReviewForm()})
 
 
@@ -46,13 +36,31 @@ def book_page(request):
 def account_page(request):
     return render((request), 'account.html')
 
+# review and booking forms
+
 
 def add_review(request):
     if request.method == 'POST':
-        review_form = ReviewForm(data=request.POST)
+        review_form = ReviewForm(request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.author = request.user  # Using 'request.user' to link the currently logged-in user.
+            review.save()
+            return redirect('home')
+    else:
+        review_form = ReviewForm()
 
-        review_form.save()
-        return redirect('home')
+    return render(request, 'base.html', {"review_form": review_form})
 
-    return render(request, 'base.html')
 
+def add_booking(request):
+    if request.method == 'POST':
+        booking_form = BookingForm(request.POST)
+        if booking_form.is_valid():
+            review = booking_form.save(commit=False)
+            booking.save()
+            return redirect('home')
+    else:
+        booking_form = BookingForm()
+
+    return render(request, 'base.html', {"booking_form": booking_form})

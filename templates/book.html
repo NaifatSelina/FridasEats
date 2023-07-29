@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
     <!--booking portal-->
@@ -7,8 +8,11 @@
         <div class="container">
             <p id="res-disclaimer">We ask that you approach your wardrobe deliberately and with a sense of occasion. You are welcome if you dress with personality, purpose and originality but please note we favor a glamorous dress code. We do NOT allow beachwear, Logo T-Shirts, any sportswear, loungewear, shorts, flip flops, track suits, sports trainers or caps. Gentlemen are permitted to wear shorts, open toed shoes and sandals during lunch however not after 7.00pm. Kindly know, entry to the restaurant is entirely at the management's discretion. All guests must be over the age of 18 after 9.00pm. We reserve the right to request proof of age if deemed necessary. Bookings are for dining only.</p>
         </div>
-        <div class="container-fluid" id="booking-div">
-            <form action="/booking.php" method="POST" id="booking-form">
+        <div class="container" id="booking-div">
+            {% if user.is_authenticated %}
+            <form id="booking_form" method="post" action="{% url 'add_booking' %}">
+                {{ booking_form | crispy }}
+                {% csrf_token %}
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Full Name*"required>
                 
@@ -26,6 +30,7 @@
                 
                 <button type="submit">Book Now</button>
               </form>
+              {% endif %}
         </div>
     </section>
     {% endblock %}

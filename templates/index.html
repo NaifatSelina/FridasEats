@@ -1,3 +1,5 @@
+<!-- NOT THE BASE TEMPLATE THAT IS RENDERED TO USER-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -164,7 +166,7 @@
     <!--review submission modal-->
     <div id="id01" class="w3-modal">
         <div class="w3-modal-content">
-            <div class="w3-container">
+            <div class="w3-container" >
                 <span onclick="document.getElementById('id01').style.display='none'"
                     class="w3-button w3-display-topright">&times;</span>
                 <h5 class="modal-title" id="review-modal-label">Submit a Review</h5>
@@ -196,9 +198,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
-                            onclick="document.getElementById('id01').style.display='none'">Close</button>
+                        <button type="submit" class="btn btn-secondary" data-dismiss="modal"
+                            onclick="document.getElementById('id01').style.display='none'">Submit</button>
                     </div>
                 </form>
             </div>
@@ -285,6 +286,7 @@
     </script>
     <!--javascript-->
     <script src="assets/js/maps.js"></script>
+
 </body>
 
 </html>

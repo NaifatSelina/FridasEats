@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fridaseats.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['fridaseats.herokuapp.com', 'localhost', '8000-naifatselina-fridaseats-nj6w4djq8dm.ws-eu102.gitpod.io']
 
 
 # Application definition

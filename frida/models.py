@@ -21,7 +21,7 @@ class Review(models.Model):
         ordering = ["author"]
 
     def __str__(self):
-        return f"This review was submitted by {self.author}."
+        return f"A review was submitted by {self.author}."
 
 
 class Booking(models.Model):

@@ -89,7 +89,7 @@
             Reservation</button>
         {% else %}
         <button id="booking-btn" type="button" class="btn btn-outline-dark"
-        onclick="location.href='https://8000-naifatselina-fridaseats-nj6w4djq8dm.ws-eu95.gitpod.io/accounts/login/';"
+        onclick="location.href='https://8000-naifatselina-fridaseats-nj6w4djq8dm.ws-eu96.gitpod.io/accounts/login/';"
         >Make a
             Reservation</button>
     </div>
@@ -194,13 +194,12 @@
                     class="w3-button w3-display-topright">&times;</span>
                 <h5 class="modal-title" id="review-modal-label">Submit a Review</h5>
                 {% if user.is_authenticated %}
-                <form id="review-form" method="post" action="{% url 'add_review' %}">
+                <form id="review_form" method="post" action="{% url 'add_review' %}">
                     {{ review_form | crispy}}
                     {% csrf_token %}
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
-                            onclick="document.getElementById('id01').style.display='none'">Close</button>
+                        <button type="submit" class="btn btn-secondary" data-dismiss="modal"
+                            onclick="document.getElementById('id01').style.display='none'">Submit</button>
                     </div>
                 </form>
                 {% endif %}
