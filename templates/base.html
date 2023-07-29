@@ -89,7 +89,7 @@
             Reservation</button>
         {% else %}
         <button id="booking-btn" type="button" class="btn btn-outline-dark"
-        onclick="location.href='https://8000-naifatselina-fridaseats-nj6w4djq8dm.ws-eu96.gitpod.io/accounts/login/';"
+        onclick="location.href={% url 'book' %}"
         >Make a
             Reservation</button>
     </div>

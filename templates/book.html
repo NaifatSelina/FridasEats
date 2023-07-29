@@ -4,7 +4,11 @@
 {% block content %}
     <!--booking portal-->
     <section id="booking">
+        {% if user.is_authenticated %}
         <h3 style="width: 90%; margin-left: 40px;" >Make A Reservation</h3>
+        {% else %}
+        <h3 style="width: 90%; margin-left: 40px;" >Please Log In | Sign Up To Make A Reservation</h3>
+        {% endif %}
         <div class="container">
             <p id="res-disclaimer">We ask that you approach your wardrobe deliberately and with a sense of occasion. You are welcome if you dress with personality, purpose and originality but please note we favor a glamorous dress code. We do NOT allow beachwear, Logo T-Shirts, any sportswear, loungewear, shorts, flip flops, track suits, sports trainers or caps. Gentlemen are permitted to wear shorts, open toed shoes and sandals during lunch however not after 7.00pm. Kindly know, entry to the restaurant is entirely at the management's discretion. All guests must be over the age of 18 after 9.00pm. We reserve the right to request proof of age if deemed necessary. Bookings are for dining only.</p>
         </div>
