@@ -30,11 +30,10 @@ class Booking(models.Model):
     phone_number = models.CharField(max_length=20)
     date = models.DateField()
     time = models.TimeField()
-    created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ["created_on"]
+        ordering = ["date"]
 
     def __str__(self):
         return f"Booking by {self.full_name}"

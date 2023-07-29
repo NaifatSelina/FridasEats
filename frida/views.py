@@ -7,10 +7,17 @@ from .forms import ReviewForm, BookingForm
 
 
 class ReviewList(generic.ListView):
-    model = Review, Booking
+    model = Review
     template_name = "base.html"
     paginate_by = 3, {
        "review_form": ReviewForm(),
+    }
+
+
+class BookingList(generic.ListView):
+    model = Booking
+    template_name = "base.html"
+    paginate_by = 3, {
        "booking_form": BookingForm()
     }
 
@@ -57,7 +64,7 @@ def add_booking(request):
     if request.method == 'POST':
         booking_form = BookingForm(request.POST)
         if booking_form.is_valid():
-            review = booking_form.save(commit=False)
+            booking = booking_form.save()
             booking.save()
             return redirect('home')
     else:

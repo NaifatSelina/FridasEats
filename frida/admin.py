@@ -17,10 +17,10 @@ class ReviewAdmin(admin.ModelAdmin):
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
-    list_display = ('full_name', 'email', 'phone_number', 'date', 'time', 'created_on', 'approved')
-    list_filter = ('approved', 'created_on')
+    list_display = ('full_name', 'email', 'phone_number', 'date', 'time', 'approved')
+    list_filter = ('approved',)
     search_fields = ('full_name', 'email', 'phone_number')
-    actions = ['approve_bookings']
+    actions = ['approve_booking']
 
-    def approve_bookings(self, request, queryset):
+    def approve_booking(self, request, queryset):
         queryset.update(approved=True)
